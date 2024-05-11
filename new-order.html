@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="main-nav">
+            <div class="nav-Logo">
+                <img src="logo.svg" alt="logo" class="main-Logo">
+            </div>
+            <div class="nav-Menu">
+                <ul>
+                    <li> Profile </li>
+                    <li> Logout  </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="main-Banner">
+            <div class="main-cols-1">
+                <h2 class="title">Civil Work Permit Issuance</h2>
+                <div class="set">
+                    <div class="file-input">
+                        <label for="supDate">Project Start Date</label>
+                        <input name="supDate" type="date">  
+                    </div>
+                    <div class="file-input">
+                        <label for="installDate">Project End Date</label>
+                        <input name="installDate" type="date">  
+                    </div>
+                </div>
+                <dev class="separator"></dev>
+                <div class="set">
+                    <div class="file-input">
+                        <label for="FurniturePrices"> Equiepment Requirements </label>
+                        <input type="file" name="FurniturePrices">
+                    </div>
+                    <div class="file-input">
+                        <label for="timeLine"> Project Timeline </label>
+                        <input type="file" name="timeLine">
+                    </div>
+                </div>
+                <a href="req-sent.html" class="send-request-btn">
+                    <i class="bi bi-arrow-left"></i>
+                    Send Request
+                </a>
+            </div>
+        </section>
+    </body>
+</html>
