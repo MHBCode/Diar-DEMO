@@ -27,24 +27,215 @@
             <div class="main-cols-1">
                 <h2 class="title">Civil Work Permit Issuance</h2>
                 <div class="set">
+                    <h3>Requestor Info</h3>
                     <div class="file-input">
-                        <label for="supDate">Project Start Date</label>
-                        <input name="supDate" type="date">  
+                        <label for="competencyPerson">Competency Of Person Undertaking work *</label>
+                        <input id="competencyPerson" name="competencyPerson" type="text">
                     </div>
+                    
                     <div class="file-input">
-                        <label for="installDate">Project End Date</label>
-                        <input name="installDate" type="date">  
+                        <label for="equipmentTools">Equipments, Tools *</label>
+                        <input id="equipmentTools" name="equipmentTools" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="staffNumber">Number of staff under the supervision of job executor at site *</label>
+                        <input id="staffNumber" name="staffNumber" type="number">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="hseName">HSE Name *</label>
+                        <input id="hseName" name="hseName" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="hseContactNumber">HSE Contact Number *</label>
+                        <input id="hseContactNumber" name="hseContactNumber" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="locationOfWorkX">Location of work (QND95) X (example = 51.533591) *</label>
+                        <input id="locationOfWorkX" name="locationOfWorkX" type="text" value="51.509614">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="locationOfWorkY">Y (example = 25.326334) *</label>
+                        <input id="locationOfWorkY" name="locationOfWorkY" type="text" value="25.430029">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="typeOfPermit">Type of Permit *</label>
+                        <input id="typeOfPermit" name="typeOfPermit" type="text">
+                    </div>
+                    <h3>Permit Info</h3>  
+                    <div class="file-input">
+                        <label for="dateStart">Date & Time start *</label>
+                        <input id="dateStart" name="dateStart" type="date" value="2024-05-15">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="dateEnd">Date & Time End *</label>
+                        <input id="dateEnd" name="dateEnd" type="date" value="2024-07-01">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="workDuration">Work Duration</label>
+                        <input id="workDuration" name="workDuration" type="number" value="47">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="workDescription">Work Description *</label>
+                        <textarea id="workDescription" name="workDescription">WO 68584-12  CABLE WO TO INSTALL FAT IN LSF AREA PIN@69052039
+                    Fiber Cable Pulling thru existing Duct Network & provide the services to required customer.</textarea>
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="remarks">Remarks</label>
+                        <textarea id="remarks" name="remarks">Fiber Cable Pulling & Splicing Activity</textarea>
                     </div>
                 </div>
                 <dev class="separator"></dev>
                 <div class="set">
+                    <h3>Attachements</h3>
                     <div class="file-input">
-                        <label for="FurniturePrices"> Equiepment Requirements </label>
-                        <input type="file" name="FurniturePrices">
+                        <label for="typeOfWorks">Type of works *</label>
+                        <input id="typeOfWorks" name="typeOfWorks" type="file">
                     </div>
+                    
                     <div class="file-input">
-                        <label for="timeLine"> Project Timeline </label>
-                        <input type="file" name="timeLine">
+                        <label for="undertakingLetter">Undertaking letter</label>
+                        <input id="undertakingLetter" name="undertakingLetter" type="file">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="methodStatement">Method Statement *</label>
+                        <input id="methodStatement" name="methodStatement" type="file">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="riskAssessment">Risk Assessment *</label>
+                        <input id="riskAssessment" name="riskAssessment" type="file">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="operationsRequirementForm">Operations Requirement form *</label>
+                        <input id="operationsRequirementForm" name="operationsRequirementForm" type="file">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="letterWithVehicles">Letter with list of vehicles signed and stamped by authorized signatory from requestor *</label>
+                        <input id="letterWithVehicles" name="letterWithVehicles" type="file">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="relevantDrawings">Relevant Drawings *</label>
+                        <input id="relevantDrawings" name="relevantDrawings" type="file">
+                    </div>
+                                     
+                    <h3>Checklist</h3>
+                    <div class="file-input">
+                        <label for="riskAssessmentYes">RISK ASSESSMENT *</label>
+                        <div class="radio-wrapper">
+                            <input id="riskAssessmentYes" name="riskAssessment" type="radio" value="yes">
+                            <label for="riskAssessmentYes">Yes</label>
+                            <input id="riskAssessmentNo" name="riskAssessment" type="radio" value="no">
+                            <label for="riskAssessmentNo">No</label>
+                        </div>
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="controlMeasuresPpeYes">Control measures and PPE *</label>
+                        <div class="radio-wrapper">
+                            <input id="controlMeasuresPpeYes" name="controlMeasuresPpe" type="radio" value="yes">
+                            <label for="controlMeasuresPpeYes">Yes</label>
+                            <input id="controlMeasuresPpeNo" name="controlMeasuresPpe" type="radio" value="no">
+                            <label for="controlMeasuresPpeNo">No</label>
+                        </div>
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="vehicleAccessRequiredYes">Vehicle Access required *</label>
+                        <div class="radio-wrapper">
+                            <input id="vehicleAccessRequiredYes" name="vehicleAccessRequired" type="radio" value="yes">
+                            <label for="vehicleAccessRequiredYes">Yes</label>
+                            <input id="vehicleAccessRequiredNo" name="vehicleAccessRequired" type="radio" value="no">
+                            <label for="vehicleAccessRequiredNo">No</label>  
+                        </div>
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="associatedPtwReferenceNumber">Associated PTW Reference Number</label>
+                        <input id="associatedPtwReferenceNumber" name="associatedPtwReferenceNumber" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="requiresIsolation">Does this require isolation / De-isolation? *</label>
+                        <input id="requiresIsolation" name="requiresIsolation" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="lockForIsolation">Lock No for isolation</label>
+                        <input id="lockForIsolation" name="lockForIsolation" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="nameForIsolation">Name for isolation</label>
+                        <input id="nameForIsolation" name="nameForIsolation" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="nameForDeIsolation">Name for de-isolation</label>
+                        <input id="nameForDeIsolation" name="nameForDeIsolation" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="facility">Facility *</label>
+                        <input id="facility" name="facility" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="siteLocation">Site location *</label>
+                        <input id="siteLocation" name="siteLocation" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="description">Description *</label>
+                        <input id="description" name="description" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="purposeOfEntry">PURPOSE OF ENTRY *</label>
+                        <input id="purposeOfEntry" name="purposeOfEntry" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="nameOfEntrySupervisor">NAME OF ENTRY SUPERVISOR *</label>
+                        <input id="nameOfEntrySupervisor" name="nameOfEntrySupervisor" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="nameOfEntryAttendant">ENTRY ATTENDANT *</label>
+                        <input id="nameOfEntryAttendant" name="nameOfEntryAttendant" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="communicationProcedures">COMMUNICATION PROCEDURES *</label>
+                        <input id="communicationProcedures" name="communicationProcedures" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="rescueProcedures">RESCUE PROCEDURES AND PHONE NUMBERS *</label>
+                        <input id="rescueProcedures" name="rescueProcedures" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="gasTesterName">GAS TESTER NAME</label>
+                        <input id="gasTesterName" name="gasTesterName" type="text">
+                    </div>
+                    
+                    <div class="file-input">
+                        <label for="equipmentModel">EQUIPMENT(S) MODEL#/ SERIAL</label>
+                        <input id="equipmentModel" name="equipmentModel" type="text">
                     </div>
                 </div>
                 <a href="req-sent.html" class="send-request-btn">
